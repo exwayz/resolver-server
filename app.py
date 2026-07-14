@@ -16,9 +16,16 @@ app = FastAPI(title="War Era Name Resolver")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.get("/")
+def root():
+    return {"status": "ok"}
+
 
 ENTITIES = load_entities()
 TOTAL = sum(len(m) for m in ENTITIES.values())
