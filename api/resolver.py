@@ -117,19 +117,25 @@ def build_groq_prompt(text, candidates):
 
     candidate_block = "\n".join(candidate_lines)
 
-    prompt = f"""You are a text resolver for a gaming platform (War Era).
+    prompt = f"""You are a text resolver for a gaming platform called War Era.
 
-Given a text and a list of candidate entity names found by naive string matching, determine which candidates are ACTUALLY being used as entity references (country, region, alliance, party, military unit) versus being used as ordinary words.
+The platform uses real-world country names, region names, alliance names, party names, and military unit names as in-game entities. Players write news articles about wars, politics, and alliances using these entity names.
 
- Rules:
-- A name is an ENTITY REFERENCE if the context makes clear it refers to a specific game entity.
-- A name is NOT an entity if:
-  * It's a regular English word (e.g., "chaos" meaning disorder, "reunion" meaning gathering, "air" meaning atmosphere).
-  * It's punctuation or formatting (e.g., "---", "===").
-  * It looks like a username with underscores (e.g., "Player_Name_XIII").
-  * It's a short abbreviation or random string with no game context.
-- Be STRICT: only confirm if you are confident it's a real entity reference.
-- When in doubt, REJECT.
+Given a text and candidate entity names found by string matching, decide which are real entity references.
+
+ACCEPT as entity reference if:
+- It's a country name (Pakistan, India, USA, etc.) used in a war/politics context
+- It's a region name used in a geographic/battle context
+- It's an alliance, party, or military unit name referenced in game context
+- The text discusses wars, battles, diplomacy, politics, or economy
+
+REJECT as false positive ONLY if:
+- It's a punctuation/formatting character used as a separator (e.g., "---", "===", "***")
+- It's a username with underscores (e.g., "Player_Name_XIII")
+- It's clearly an ordinary English word with no game context (e.g., "reunion" meaning gathering, "air" meaning atmosphere)
+- It's a random short string or abbreviation with zero game context
+
+IMPORTANT: Country names like Pakistan, India, USA, etc. in a war/news context are ALWAYS real entity references. Do NOT reject them.
 
 TEXT:
 {text}
@@ -156,20 +162,25 @@ def build_groq_prompt_batched(text, batch_candidates, batch_offset):
 
     candidate_block = "\n".join(candidate_lines)
 
-    prompt = f"""You are a text resolver for a gaming platform (War Era).
+    prompt = f"""You are a text resolver for a gaming platform called War Era.
 
-Given a text and candidate entity names found by string matching, determine which are ACTUALLY entity references vs false positives.
+The platform uses real-world country names, region names, alliance names, party names, and military unit names as in-game entities. Players write news articles about wars, politics, and alliances using these entity names.
 
- Rules:
-- Entity reference: the context CLEARLY refers to a specific game entity (country, region, alliance, party, or military unit). Look for capitalization, surrounding context about wars, battles, politics, economy.
-- NOT entity — REJECT if:
-  * It's a regular English word (e.g., "chaos" = disorder, "reunion" = gathering, "air" = atmosphere, "After Party" = social event)
-  * It's punctuation or formatting (e.g., "---", "===")
-  * It looks like a username with underscores (e.g., "Player_Name_XIII")
-  * It's a short abbreviation or random string with no game context
-  * The surrounding text shows no relation to game entities
-- Be STRICT: only confirm if you are confident it's a real entity reference.
-- When in doubt, REJECT.
+Given a text and candidate entity names found by string matching, decide which are real entity references.
+
+ACCEPT as entity reference if:
+- It's a country name (Pakistan, India, USA, etc.) used in a war/politics context
+- It's a region name used in a geographic/battle context
+- It's an alliance, party, or military unit name referenced in game context
+- The text discusses wars, battles, diplomacy, politics, or economy
+
+REJECT as false positive ONLY if:
+- It's a punctuation/formatting character used as a separator (e.g., "---", "===", "***")
+- It's a username with underscores (e.g., "Player_Name_XIII")
+- It's clearly an ordinary English word with no game context (e.g., "reunion" meaning gathering, "air" meaning atmosphere)
+- It's a random short string or abbreviation with zero game context
+
+IMPORTANT: Country names like Pakistan, India, USA, etc. in a war/news context are ALWAYS real entity references. Do NOT reject them.
 
 TEXT:
 {text}
