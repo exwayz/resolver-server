@@ -104,7 +104,14 @@ def resolve(req: ResolveRequest):
                         "url": matches[idx]["url"],
                     })
         except Exception:
-            pass
+            for j, c in enumerate(batch):
+                match_idx = batch_start + j
+                if match_idx < len(matches):
+                    confirmed.append({
+                        "start": c["start"],
+                        "end": c["end"],
+                        "url": matches[match_idx]["url"],
+                    })
 
     result = apply_resolutions(text, confirmed)
     return ResolveResponse(
