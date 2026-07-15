@@ -104,12 +104,7 @@ def resolve(req: ResolveRequest):
                         "url": matches[idx]["url"],
                     })
         except Exception:
-            for c in batch:
-                confirmed.append({
-                    "start": c["start"],
-                    "end": c["end"],
-                    "url": "",
-                })
+            pass
 
     result = apply_resolutions(text, confirmed)
     return ResolveResponse(

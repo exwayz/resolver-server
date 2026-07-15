@@ -122,10 +122,14 @@ def build_groq_prompt(text, candidates):
 Given a text and a list of candidate entity names found by naive string matching, determine which candidates are ACTUALLY being used as entity references (country, region, alliance, party, military unit) versus being used as ordinary words.
 
  Rules:
-- A name is an ENTITY REFERENCE if the context makes clear it refers to a specific game entity (country, region, alliance, party, or military unit).
-- A name is NOT an entity if it's clearly used as a regular English word (e.g., "chaos" meaning disorder, "reunion" meaning gathering, "air" meaning atmosphere).
-- Pay attention to capitalization, surrounding words, and sentence structure.
-- If ambiguous, lean towards entity reference (the game uses these names in narrative text).
+- A name is an ENTITY REFERENCE if the context makes clear it refers to a specific game entity.
+- A name is NOT an entity if:
+  * It's a regular English word (e.g., "chaos" meaning disorder, "reunion" meaning gathering, "air" meaning atmosphere).
+  * It's punctuation or formatting (e.g., "---", "===").
+  * It looks like a username with underscores (e.g., "Player_Name_XIII").
+  * It's a short abbreviation or random string with no game context.
+- Be STRICT: only confirm if you are confident it's a real entity reference.
+- When in doubt, REJECT.
 
 TEXT:
 {text}
@@ -154,13 +158,18 @@ def build_groq_prompt_batched(text, batch_candidates, batch_offset):
 
     prompt = f"""You are a text resolver for a gaming platform (War Era).
 
-Given a text and candidate entity names found by string matching, determine which are ACTUALLY entity references vs ordinary English words.
+Given a text and candidate entity names found by string matching, determine which are ACTUALLY entity references vs false positives.
 
  Rules:
-- Entity reference: context clearly refers to a game entity (country, region, alliance, party, military unit).
-- NOT entity: used as a regular word (e.g., "chaos" = disorder, "reunion" = gathering, "air" = atmosphere, "After Party" = social event).
-- Capitalization and surrounding words matter.
-- If ambiguous, lean towards entity reference.
+- Entity reference: the context CLEARLY refers to a specific game entity (country, region, alliance, party, or military unit). Look for capitalization, surrounding context about wars, battles, politics, economy.
+- NOT entity — REJECT if:
+  * It's a regular English word (e.g., "chaos" = disorder, "reunion" = gathering, "air" = atmosphere, "After Party" = social event)
+  * It's punctuation or formatting (e.g., "---", "===")
+  * It looks like a username with underscores (e.g., "Player_Name_XIII")
+  * It's a short abbreviation or random string with no game context
+  * The surrounding text shows no relation to game entities
+- Be STRICT: only confirm if you are confident it's a real entity reference.
+- When in doubt, REJECT.
 
 TEXT:
 {text}
@@ -168,7 +177,7 @@ TEXT:
 CANDIDATES:
 {candidate_block}
 
-Return ONLY a JSON array of the indices that ARE real entity references. Example: [0, 2, 5]
-If none, return: []"""
+Return ONLY a JSON array of the indices (0-based) of candidates that ARE real entity references. Example: [0, 2, 5]
+If none are real, return: []"""
 
     return prompt
