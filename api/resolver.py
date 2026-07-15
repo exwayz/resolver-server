@@ -124,19 +124,15 @@ The platform uses real-world country names, region names, alliance names, party 
 
 Given a text and candidate entity names found by string matching, decide which are real entity references.
 
-ACCEPT as entity reference if:
-- It's a country name (Pakistan, India, USA, etc.) used in a war/politics context
-- It's a region name used in a geographic/battle context
-- It's an alliance, party, or military unit name referenced in game context
+ACCEPT as entity reference:
+- Country, region, alliance, party, or military unit names used in war/politics/diplomacy context
 - The text discusses wars, battles, diplomacy, politics, or economy
 
 REJECT as false positive ONLY if:
-- It's a punctuation/formatting character used as a separator (e.g., "---", "===", "***")
-- It's a username with underscores (e.g., "Player_Name_XIII")
-- It's clearly an ordinary English word with no game context (e.g., "reunion" meaning gathering, "air" meaning atmosphere)
-- It's a random short string or abbreviation with zero game context
+- It is just punctuation or formatting characters (e.g., "---", "===", "***")
+- It is a username pattern with underscores and numbers (e.g., "Player_Name_XIII")
 
-IMPORTANT: Country names like Pakistan, India, USA, etc. in a war/news context are ALWAYS real entity references. Do NOT reject them.
+Do NOT reject country names, region names, or other entity names that appear in the text.
 
 TEXT:
 {text}
@@ -169,19 +165,15 @@ The platform uses real-world country names, region names, alliance names, party 
 
 Given a text and candidate entity names found by string matching, decide which are real entity references.
 
-ACCEPT as entity reference if:
-- It's a country name (Pakistan, India, USA, etc.) used in a war/politics context
-- It's a region name used in a geographic/battle context
-- It's an alliance, party, or military unit name referenced in game context
+ACCEPT as entity reference:
+- Country, region, alliance, party, or military unit names used in war/politics/diplomacy context
 - The text discusses wars, battles, diplomacy, politics, or economy
 
 REJECT as false positive ONLY if:
-- It's a punctuation/formatting character used as a separator (e.g., "---", "===", "***")
-- It's a username with underscores (e.g., "Player_Name_XIII")
-- It's clearly an ordinary English word with no game context (e.g., "reunion" meaning gathering, "air" meaning atmosphere)
-- It's a random short string or abbreviation with zero game context
+- It is just punctuation or formatting characters (e.g., "---", "===", "***")
+- It is a username pattern with underscores and numbers (e.g., "Player_Name_XIII")
 
-IMPORTANT: Country names like Pakistan, India, USA, etc. in a war/news context are ALWAYS real entity references. Do NOT reject them.
+Do NOT reject country names, region names, or other entity names that appear in the text.
 
 TEXT:
 {text}
