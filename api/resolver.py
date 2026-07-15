@@ -2,7 +2,7 @@ import re
 import os
 import json
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+DATA_DIR = os.path.join(os.getcwd(), "data")
 
 CATEGORY_PREFIXES = {
     "country":  "/country",
@@ -52,7 +52,8 @@ def naive_scan(text, entities):
     combined = []
     for cat, mapping in entities.items():
         for name, url in mapping.items():
-            combined.append((name, url, cat))
+            if len(name) >= 2:
+                combined.append((name, url, cat))
     combined.sort(key=lambda x: len(x[0]), reverse=True)
 
     matches = []
