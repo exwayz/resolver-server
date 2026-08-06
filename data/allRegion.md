@@ -172,15 +172,15 @@
 ## BR
 
 - [Belém](/region/6813b7089403bc4170a5d8f7)
-- [BrasÃ­lia *](/region/6813b7089403bc4170a5d906)
+- [Brasília *](/region/6813b7089403bc4170a5d906)
 - [Campo Grande](/region/6813b7089403bc4170a5d900)
 - [Fortaleza](/region/6813b7089403bc4170a5d8fa)
 - [Manaus](/region/6813b7089403bc4170a5d8f1)
 - [Porto Alegre](/region/6813b7089403bc4170a5d90c)
 - [Recife](/region/6813b7089403bc4170a5d909)
 - [Rio de Janeiro](/region/6813b7089403bc4170a5d8f4)
-- [SÃ£o Paulo](/region/6813b7089403bc4170a5d8fd)
 - [Salvador](/region/6813b7089403bc4170a5d903)
+- [São Paulo](/region/6813b7089403bc4170a5d8fd)
 
 ---
 
@@ -274,10 +274,10 @@
 
 ## CI
 
-- [Northeastern CÃ´te d'Ivoire *](/region/6873d11694e6b3b7989a4c86)
-- [Northwestern CÃ´te d'Ivoire](/region/6873d11694e6b3b7989a4c83)
-- [Southeastern CÃ´te d'Ivoire](/region/6873d11694e6b3b7989a4c89)
-- [Southwestern CÃ´te d'Ivoire](/region/6873d11694e6b3b7989a4c8c)
+- [Northeastern Côte d'Ivoire *](/region/6873d11694e6b3b7989a4c86)
+- [Northwestern Côte d'Ivoire](/region/6873d11694e6b3b7989a4c83)
+- [Southeastern Côte d'Ivoire](/region/6873d11694e6b3b7989a4c89)
+- [Southwestern Côte d'Ivoire](/region/6873d11694e6b3b7989a4c8c)
 
 ---
 
@@ -366,7 +366,7 @@
 
 ## DE
 
-- [Baden-WÃ¼rttemberg](/region/6813b7049403bc4170a5d6de)
+- [Baden-Württemberg](/region/6813b7049403bc4170a5d6de)
 - [Bavaria](/region/6813b7049403bc4170a5d6e1)
 - [Brandenburg *](/region/6813b7049403bc4170a5d6d2)
 - [Lower Saxony](/region/6813b7049403bc4170a5d6d8)
@@ -400,7 +400,7 @@
 ## DZ
 
 - [Algerian Atlas Mountains](/region/696a81f5882256e1db118214)
-- [AurÃ¨s Mountains](/region/696a81f5882256e1db118216)
+- [Aurès Mountains](/region/696a81f5882256e1db118216)
 - [Eastern Algerian Sahara](/region/6813b7099403bc4170a5d981)
 - [Northeastern Algeria](/region/6813b7099403bc4170a5d984)
 - [Northern Algeria *](/region/6813b7099403bc4170a5d987)
@@ -451,7 +451,7 @@
 - [Andalusia](/region/6813b7049403bc4170a5d6e7)
 - [Balearic Islands](/region/6813b7049403bc4170a5d6e4)
 - [Canary Islands](/region/6813b7049403bc4170a5d6f9)
-- [Castile & LeÃ³n *](/region/6813b7049403bc4170a5d6f0)
+- [Castile & León *](/region/6813b7049403bc4170a5d6f0)
 - [Castilla-La Mancha](/region/6813b7049403bc4170a5d6ea)
 - [Catalonia](/region/6813b7049403bc4170a5d6ed)
 - [Galicia](/region/6813b7049403bc4170a5d6f6)
@@ -857,8 +857,8 @@
 
 ## LT
 
-- [AukÅ¡taitija](/region/6813b7059403bc4170a5d75c)
-- [DzÅ«kija *](/region/6813b7059403bc4170a5d762)
+- [Aukštaitija](/region/6813b7059403bc4170a5d75c)
+- [Dzūkija *](/region/6813b7059403bc4170a5d762)
 - [Samogitia](/region/6813b7059403bc4170a5d759)
 - [Suvalkija](/region/6813b7059403bc4170a5d75f)
 
@@ -892,8 +892,8 @@
 
 - [Central Atlantic Region *](/region/6813b7099403bc4170a5d957)
 - [Dakhla-Oued Ed-Dahab](/region/696a81f5882256e1db118212)
-- [DrÃ¢a-Tafilalet](/region/6813b7099403bc4170a5d95a)
-- [LaÃ¢youne-Sakia El Hamra](/region/6813b7089403bc4170a5d951)
+- [Drâa-Tafilalet](/region/6813b7099403bc4170a5d95a)
+- [Laâyoune-Sakia El Hamra](/region/6813b7089403bc4170a5d951)
 - [Northern Morocco](/region/6813b7099403bc4170a5d954)
 - [Souss-Massa](/region/6813b7099403bc4170a5d95d)
 
@@ -1199,9 +1199,9 @@
 
 ## RO
 
-- [Banat & CriÈana](/region/6813b7059403bc4170a5d753)
+- [Banat & Crișana](/region/6813b7059403bc4170a5d753)
 - [Dobrogea](/region/6813b7059403bc4170a5d74d)
-- [MaramureÈ & Bucovina](/region/6813b7059403bc4170a5d756)
+- [Maramureș & Bucovina](/region/6813b7059403bc4170a5d756)
 - [Muntenia *](/region/696a81f5882256e1db118208)
 - [Oltenia](/region/6813b7059403bc4170a5d747)
 - [Romanian Moldavia](/region/6813b7059403bc4170a5d74a)
@@ -1280,12 +1280,12 @@
 
 ## SE
 
-- [Dalarna & VÃ¤rmland](/region/6813b7069403bc4170a5d7d7)
+- [Dalarna & Värmland](/region/6813b7069403bc4170a5d7d7)
 - [Gotland](/region/6813b7069403bc4170a5d7ce)
-- [JÃ¤mtland](/region/6813b7069403bc4170a5d7da)
+- [Jämtland](/region/6813b7069403bc4170a5d7da)
 - [Lappland](/region/6813b7069403bc4170a5d7dd)
-- [SkÃ¥ne & Halland](/region/6813b7069403bc4170a5d7d1)
-- [SmÃ¥land](/region/6813b7069403bc4170a5d7d4)
+- [Skåne & Halland](/region/6813b7069403bc4170a5d7d1)
+- [Småland](/region/6813b7069403bc4170a5d7d4)
 - [Uppland *](/region/6813b7069403bc4170a5d7e0)
 
 ---
@@ -1354,7 +1354,7 @@
 
 ## ST
 
-- [SÃ£o Tomé and PrÃ­ncipe *](/region/6873d11794e6b3b7989a4cf5)
+- [São Tomé and Príncipe *](/region/6873d11794e6b3b7989a4cf5)
 
 ---
 
@@ -1428,7 +1428,7 @@
 
 - [Ashgabat *](/region/6813b70c9403bc4170a5db0a)
 - [Balkan Region](/region/6813b70c9403bc4170a5db07)
-- [DaÅoguz Region](/region/6813b70c9403bc4170a5dafe)
+- [Daşoguz Region](/region/6813b70c9403bc4170a5dafe)
 - [Lebap Region](/region/6813b70c9403bc4170a5db01)
 - [Mary Region](/region/6813b70c9403bc4170a5db04)
 

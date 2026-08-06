@@ -73,6 +73,7 @@
 - [Bosnia](/country/6813b6d446e731854c7ac80e)
 - [Bulgaria](/country/6813b6d446e731854c7ac7be)
 - [Croatia](/country/6813b6d446e731854c7ac7bc)
+- [Cyprus](/country/6813b6d546e731854c7ac842)
 - [Greece](/country/6813b6d446e731854c7ac7e8)
 - [Kosovo](/country/6813b6d546e731854c7ac817)
 - [Montenegro](/country/6813b6d546e731854c7ac814)
@@ -80,7 +81,6 @@
 - [Romania](/country/6813b6d446e731854c7ac7b6)
 - [Serbia](/country/6813b6d446e731854c7ac7ba)
 - [Slovenia](/country/6813b6d446e731854c7ac7b4)
-- [Cyprus](/country/6813b6d546e731854c7ac842)
 
 ### Central Europe
 - [Czechia](/country/6813b6d446e731854c7ac7b0)
