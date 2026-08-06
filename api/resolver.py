@@ -33,7 +33,7 @@ def load_entities(data_dir=None):
             with open(filepath, "r", encoding="utf-8") as f:
                 for line in f:
                     m = re.search(
-                        r"\[([^\]]+)\]\(" + re.escape(prefix) + r"/([^)]+)\)", line
+                        r"\[(.+)\]\(" + re.escape(prefix) + r"/([^)]+)\)", line
                     )
                     if m:
                         name = m.group(1).replace(" *", "")
