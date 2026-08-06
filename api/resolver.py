@@ -10,6 +10,7 @@ CATEGORY_PREFIXES = {
     "alliance": "/alliance",
     "party":    "/party",
     "mu":       "/mu",
+    "user":     "/user",
 }
 
 CATEGORY_FILES = {
@@ -18,6 +19,7 @@ CATEGORY_FILES = {
     "alliance": "allAlliances.md",
     "party":    "allParties.md",
     "mu":       "allMU.md",
+    "user":     "allUsers.md",
 }
 
 
@@ -120,17 +122,17 @@ def build_groq_prompt(text, candidates):
 
     prompt = f"""You are a text resolver for a gaming platform called War Era.
 
-The platform uses real-world country names, region names, alliance names, party names, and military unit names as in-game entities. Players write news articles about wars, politics, and alliances using these entity names.
+The platform uses real-world country names, region names, alliance names, party names, military unit names, and player usernames as in-game entities. Players write news articles about wars, politics, and alliances using these entity names.
 
 Given a text and candidate entity names found by string matching, decide which are real entity references.
 
 ACCEPT as entity reference:
 - Country, region, alliance, party, or military unit names used in war/politics/diplomacy context
+- Player usernames (may contain underscores and numbers, e.g., "Player_Name_XIII")
 - The text discusses wars, battles, diplomacy, politics, or economy
 
 REJECT as false positive ONLY if:
 - It is just punctuation or formatting characters (e.g., "---", "===", "***")
-- It is a username pattern with underscores and numbers (e.g., "Player_Name_XIII")
 
 Do NOT reject country names, region names, or other entity names that appear in the text.
 
@@ -161,17 +163,17 @@ def build_groq_prompt_batched(text, batch_candidates, batch_offset):
 
     prompt = f"""You are a text resolver for a gaming platform called War Era.
 
-The platform uses real-world country names, region names, alliance names, party names, and military unit names as in-game entities. Players write news articles about wars, politics, and alliances using these entity names.
+The platform uses real-world country names, region names, alliance names, party names, military unit names, and player usernames as in-game entities. Players write news articles about wars, politics, and alliances using these entity names.
 
 Given a text and candidate entity names found by string matching, decide which are real entity references.
 
 ACCEPT as entity reference:
 - Country, region, alliance, party, or military unit names used in war/politics/diplomacy context
+- Player usernames (may contain underscores and numbers, e.g., "Player_Name_XIII")
 - The text discusses wars, battles, diplomacy, politics, or economy
 
 REJECT as false positive ONLY if:
 - It is just punctuation or formatting characters (e.g., "---", "===", "***")
-- It is a username pattern with underscores and numbers (e.g., "Player_Name_XIII")
 
 Do NOT reject country names, region names, or other entity names that appear in the text.
 

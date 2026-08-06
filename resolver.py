@@ -10,6 +10,7 @@ CATEGORY_PREFIXES = {
     "alliance": "/alliance",
     "party":    "/party",
     "mu":       "/mu",
+    "user":     "/user",
 }
 
 CATEGORY_FILES = {
@@ -18,6 +19,7 @@ CATEGORY_FILES = {
     "alliance": "allAlliances.md",
     "party":    "allParties.md",
     "mu":       "allMU.md",
+    "user":     "allUsers.md",
 }
 
 
@@ -119,11 +121,12 @@ def build_groq_prompt(text, candidates):
 
     prompt = f"""You are a text resolver for a gaming platform (War Era).
 
-Given a text and a list of candidate entity names found by naive string matching, determine which candidates are ACTUALLY being used as entity references (country, region, alliance, party, military unit) versus being used as ordinary words.
+Given a text and a list of candidate entity names found by naive string matching, determine which candidates are ACTUALLY being used as entity references (country, region, alliance, party, military unit, or player username) versus being used as ordinary words.
 
  Rules:
-- A name is an ENTITY REFERENCE if the context makes clear it refers to a specific game entity (country, region, alliance, party, or military unit).
+- A name is an ENTITY REFERENCE if the context makes clear it refers to a specific game entity (country, region, alliance, party, military unit, or player username).
 - A name is NOT an entity if it's clearly used as a regular English word (e.g., "chaos" meaning disorder, "reunion" meaning gathering, "air" meaning atmosphere).
+- Player usernames may contain underscores and numbers (e.g., "Player_Name_XIII").
 - Pay attention to capitalization, surrounding words, and sentence structure.
 - If ambiguous, lean towards entity reference (the game uses these names in narrative text).
 
@@ -157,8 +160,9 @@ def build_groq_prompt_batched(text, batch_candidates, batch_offset):
 Given a text and candidate entity names found by string matching, determine which are ACTUALLY entity references vs ordinary English words.
 
  Rules:
-- Entity reference: context clearly refers to a game entity (country, region, alliance, party, military unit).
+- Entity reference: context clearly refers to a game entity (country, region, alliance, party, military unit, or player username).
 - NOT entity: used as a regular word (e.g., "chaos" = disorder, "reunion" = gathering, "air" = atmosphere, "After Party" = social event).
+- Player usernames may contain underscores and numbers (e.g., "Player_Name_XIII").
 - Capitalization and surrounding words matter.
 - If ambiguous, lean towards entity reference.
 
