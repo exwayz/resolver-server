@@ -31,6 +31,7 @@ BATCH_SIZE = 40
 class ResolveRequest(BaseModel):
     text: str
     mode: str = "smart"
+    blacklist: list[str] = []
 
 
 class ResolveResponse(BaseModel):
@@ -55,7 +56,7 @@ def resolve(req: ResolveRequest):
     if not text.strip():
         raise HTTPException(status_code=400, detail="Empty text")
 
-    matches = naive_scan(text, ENTITIES)
+    matches = naive_scan(text, ENTITIES, set(req.blacklist))
 
     if not matches:
         return ResolveResponse(result=text, matches_found=0, matches_confirmed=0, method="naive")

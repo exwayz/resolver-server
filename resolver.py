@@ -45,16 +45,19 @@ def load_entities(data_dir=None):
     return entities
 
 
-def naive_scan(text, entities):
+def naive_scan(text, entities, blacklist=None):
     """
     Left-to-right greedy scan. Returns list of (start, end, name, url, category)
     sorted by position. No context filtering — matches everything.
+    Names in the blacklist are skipped and never resolved.
     """
+    blacklist = blacklist or set()
     # Build combined list sorted longest-first
     combined = []
     for cat, mapping in entities.items():
         for name, url in mapping.items():
-            combined.append((name, url, cat))
+            if len(name) >= 2 and name not in blacklist:
+                combined.append((name, url, cat))
     combined.sort(key=lambda x: len(x[0]), reverse=True)
 
     matches = []
