@@ -2,7 +2,7 @@ name: Update War Era users
 
 on:
   schedule:
-    - cron: '0 1-23/2 * * *'
+    - cron: '0 4 * * *'
   workflow_dispatch:
 
 permissions:
