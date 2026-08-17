@@ -3,7 +3,7 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const API_BASE = process.env.WARERA_API_BASE || 'https://api2.warera.io/trpc/';
-const API_KEY = process.env.WARERA_API_KEY || 'wae_5332b87af46c869ada4a932094c878b1537253435ae991b648bd6fc38b255c49';
+const API_KEY = process.env.WARERA_API_KEY;
 const DATA_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'data');
 const PAGE_SIZE = 100;
 const CONCURRENCY = 20;
