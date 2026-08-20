@@ -108,7 +108,11 @@ def apply_resolutions(text, confirmed):
     confirmed.sort(key=lambda x: x["start"], reverse=True)
     result = text
     for c in confirmed:
-        result = result[: c["start"]] + c["url"] + " " + result[c["end"] :]
+        after_char = result[c["end"]:c["end"] + 1]
+        if after_char and not after_char.isalnum() and after_char != " ":
+            result = result[: c["start"]] + c["url"] + " " + result[c["end"] :]
+        else:
+            result = result[: c["start"]] + c["url"] + result[c["end"] :]
     return result
 
 
