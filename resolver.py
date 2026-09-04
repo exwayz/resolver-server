@@ -4,6 +4,15 @@ import json
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
+MOBILE_BASE = "https://app.warera.io"
+
+
+def format_url(url, url_format="desktop"):
+    """Format root-relative URL as desktop (/user/x) or mobile (full https URL)."""
+    if url_format == "mobile":
+        return MOBILE_BASE + url
+    return url
+
 CATEGORY_PREFIXES = {
     "country":  "/country",
     "region":   "/region",

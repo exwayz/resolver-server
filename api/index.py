@@ -7,7 +7,7 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from groq import Groq
 
-from resolver import load_entities, naive_scan, extract_candidates, apply_resolutions, build_groq_prompt_batched
+from resolver import load_entities, naive_scan, extract_candidates, apply_resolutions, build_groq_prompt_batched, format_url
 
 app = FastAPI(title="War Era Name Resolver")
 
@@ -32,6 +32,7 @@ class ResolveRequest(BaseModel):
     text: str
     mode: str = "smart"
     blacklist: list[str] = []
+    url_format: str = "desktop"
 
 
 class ResolveResponse(BaseModel):
@@ -62,7 +63,11 @@ def resolve(req: ResolveRequest):
         return ResolveResponse(result=text, matches_found=0, matches_confirmed=0, method="naive")
 
     if req.mode == "naive":
-        result = apply_resolutions(text, [m for m in matches])
+        result = apply_resolutions(text, [{
+            "start": m["start"],
+            "end": m["end"],
+            "url": format_url(m["url"], req.url_format),
+        } for m in matches])
         return ResolveResponse(
             result=result,
             matches_found=len(matches),
@@ -71,7 +76,11 @@ def resolve(req: ResolveRequest):
         )
 
     if not groq_client:
-        result = apply_resolutions(text, [m for m in matches])
+        result = apply_resolutions(text, [{
+            "start": m["start"],
+            "end": m["end"],
+            "url": format_url(m["url"], req.url_format),
+        } for m in matches])
         return ResolveResponse(
             result=result,
             matches_found=len(matches),
@@ -102,7 +111,7 @@ def resolve(req: ResolveRequest):
                     confirmed.append({
                         "start": c["start"],
                         "end": c["end"],
-                        "url": matches[idx]["url"],
+                        "url": format_url(matches[idx]["url"], req.url_format),
                     })
         except Exception:
             for j, c in enumerate(batch):
@@ -111,7 +120,7 @@ def resolve(req: ResolveRequest):
                     confirmed.append({
                         "start": c["start"],
                         "end": c["end"],
-                        "url": matches[match_idx]["url"],
+                        "url": format_url(matches[match_idx]["url"], req.url_format),
                     })
 
     result = apply_resolutions(text, confirmed)
