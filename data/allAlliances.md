@@ -4,8 +4,8 @@
 
 - [ATLAS](/alliance/6a2966e8f0f195d344d5158c)
 - [B.A.N.G](/alliance/6a2b13879c8c99640b9c4963)
+- [C.H.E.E.S.E](/alliance/6aa01a7d5d5cc7b53f7de7ee)
 - [Causing Ongoing Problems Everywhere](/alliance/6a95f16a8735ab5e1f87fd57)
-- [Custodes Aeterni](/alliance/6a32e1c81a99ca188512f94f)
 - [FORGE](/alliance/6a80cb6969124c83cce08934)
 - [Frente Unido de Autodefensa](/alliance/6a2981ad131983aa8445864d)
 - [Hippo Unchained](/alliance/6a9622a618801a8c9c6fbb5f)
