@@ -1,6 +1,6 @@
 # All Alliances Link
 
-> Complete list of all 12 alliances with links
+> Complete list of all 13 alliances with links
 
 - [ATLAS](/alliance/6a2966e8f0f195d344d5158c)
 - [B.A.N.G](/alliance/6a2b13879c8c99640b9c4963)
@@ -14,3 +14,4 @@
 - [The Emerald Accord](/alliance/6a935ce802f2f04bc1213e54)
 - [The Nile Baltics](/alliance/6a2967acab5f82249fd8c1c3)
 - [Troublemakers](/alliance/6a7329264c454982a9e6bdb2)
+- [We're Incompetent and Poor Economically](/alliance/6ad07878db6875d36c404c09)
