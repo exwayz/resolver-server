@@ -1,10 +1,8 @@
 # All Alliances Link
 
-> Complete list of all 13 alliances with links
+> Complete list of all 11 alliances with links
 
 - [ATLAS](/alliance/6a2966e8f0f195d344d5158c)
-- [B.A.N.G](/alliance/6a2b13879c8c99640b9c4963)
-- [Causing Ongoing Problems Everywhere](/alliance/6a95f16a8735ab5e1f87fd57)
 - [FORGE](/alliance/6a80cb6969124c83cce08934)
 - [Frente Unido de Autodefensa](/alliance/6a2981ad131983aa8445864d)
 - [Hippo Unchained](/alliance/6a9622a618801a8c9c6fbb5f)

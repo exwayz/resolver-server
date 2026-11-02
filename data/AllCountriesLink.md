@@ -257,3 +257,8 @@
 - [Papua New Guinea](/country/6873d0ea1758b40e712b5f67)
 - [Solomon Islands](/country/6873d0ea1758b40e712b5f60)
 - [Vanuatu](/country/6873d0ea1758b40e712b5f63)
+
+## Other
+
+### Unclassified
+- [Maldives](/country/6adf5d1d58ce8dc7669676bb)

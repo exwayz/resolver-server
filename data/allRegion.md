@@ -1,6 +1,6 @@
 # All Regions Link
 
-> Complete list of all 726 regions with links
+> Complete list of all 742 regions with links
 
 ## AD
 
@@ -54,12 +54,14 @@
 ## AR
 
 - [Buenos Aires *](/region/6813b7089403bc4170a5d90f)
+- [Catamarca](/region/6adf5d232e32f1b904a1bc89)
+- [Chaco](/region/6813b7089403bc4170a5d91b)
+- [Comahue](/region/6813b7089403bc4170a5d915)
+- [Córdoba](/region/6adf5d232e32f1b904a1bc87)
 - [Mendoza](/region/6813b7089403bc4170a5d921)
 - [Patagonia](/region/6813b7089403bc4170a5d912)
 - [Posadas](/region/6813b7089403bc4170a5d918)
-- [Resistencia](/region/6813b7089403bc4170a5d91b)
 - [Salta](/region/6813b7089403bc4170a5d91e)
-- [Ushuaia](/region/6813b7089403bc4170a5d915)
 
 ---
 
@@ -171,16 +173,17 @@
 
 ## BR
 
-- [Belém](/region/6813b7089403bc4170a5d8f7)
-- [Brasília *](/region/6813b7089403bc4170a5d906)
-- [Campo Grande](/region/6813b7089403bc4170a5d900)
-- [Fortaleza](/region/6813b7089403bc4170a5d8fa)
-- [Manaus](/region/6813b7089403bc4170a5d8f1)
-- [Porto Alegre](/region/6813b7089403bc4170a5d90c)
-- [Recife](/region/6813b7089403bc4170a5d909)
-- [Rio de Janeiro](/region/6813b7089403bc4170a5d8f4)
-- [Salvador](/region/6813b7089403bc4170a5d903)
-- [São Paulo](/region/6813b7089403bc4170a5d8fd)
+- [Atlantic Amazon](/region/6813b7089403bc4170a5d8f7)
+- [Bahia](/region/6813b7089403bc4170a5d903)
+- [Borborema Plateau](/region/6813b7089403bc4170a5d909)
+- [Brazilian South](/region/6813b7089403bc4170a5d90c)
+- [Central Brazil *](/region/6813b7089403bc4170a5d906)
+- [Doce River Basin](/region/6813b7089403bc4170a5d8f4)
+- [Pantanal](/region/6813b7089403bc4170a5d900)
+- [Paranaíba River Basin](/region/6813b7089403bc4170a5d8fa)
+- [Rio-São Paulo Axis](/region/6813b7089403bc4170a5d8fd)
+- [Tocantins](/region/6adf5d232e32f1b904a1bc8b)
+- [Upper Amazon Basin](/region/6813b7089403bc4170a5d8f1)
 
 ---
 
@@ -285,7 +288,9 @@
 
 - [Antofagasta](/region/6813b7089403bc4170a5d936)
 - [La Serena](/region/6813b7089403bc4170a5d939)
+- [Magallanes y Antártica Chilena](/region/6adf5d232e32f1b904a1bc81)
 - [Puerto Montt](/region/6813b7089403bc4170a5d93f)
+- [Rapa Nui](/region/6adf5d232e32f1b904a1bc83)
 - [Santiago *](/region/6813b7089403bc4170a5d933)
 - [Temuco](/region/6813b7089403bc4170a5d93c)
 
@@ -351,7 +356,8 @@
 
 ## CY
 
-- [Cyprus *](/region/6813b7089403bc4170a5d94e)
+- [Northern Cyprus](/region/6813b7089403bc4170a5d94e)
+- [Southern Cyprus *](/region/6adf5d232e32f1b904a1bc79)
 
 ---
 
@@ -522,8 +528,8 @@
 ## GH
 
 - [Brong-Ahafo](/region/6873d11494e6b3b7989a4bea)
-- [Eastern Ghana](/region/6873d11394e6b3b7989a4be1)
-- [Northern Ghana *](/region/6873d11494e6b3b7989a4be7)
+- [Eastern Ghana *](/region/6873d11394e6b3b7989a4be1)
+- [Northern Ghana](/region/6873d11494e6b3b7989a4be7)
 - [Western Ghana](/region/6873d11494e6b3b7989a4be4)
 
 ---
@@ -653,15 +659,17 @@
 
 ## IN
 
-- [Dravida](/region/6813b7099403bc4170a5d9d2)
+- [Andhra Pradesh and Telangana](/region/6adf5d232e32f1b904a1bc71)
+- [East India](/region/6813b7099403bc4170a5d9cf)
 - [Gujarat](/region/6813b70a9403bc4170a5d9e4)
-- [Haryana](/region/6813b70a9403bc4170a5d9ea)
 - [Jaladhi](/region/6813b70a9403bc4170a5d9ed)
+- [Karnataka](/region/6adf5d232e32f1b904a1bc73)
 - [Kashmir](/region/6813b70a9403bc4170a5d9d8)
-- [Madhya Pradesh](/region/6813b70a9403bc4170a5d9de)
-- [Maratha](/region/6813b70a9403bc4170a5d9d5)
-- [Northeastern India](/region/6813b70a9403bc4170a5d9e7)
-- [Utkala](/region/6813b7099403bc4170a5d9cf)
+- [Madhya Pradesh](/region/6813b70a9403bc4170a5d9ea)
+- [Maharashtra](/region/6813b70a9403bc4170a5d9d5)
+- [North East](/region/6813b70a9403bc4170a5d9e7)
+- [Rajasthan](/region/6813b70a9403bc4170a5d9de)
+- [Tamil Nadu and Kerala](/region/6813b7099403bc4170a5d9d2)
 - [Uttar Pradesh *](/region/6813b70a9403bc4170a5d9db)
 
 ---
@@ -784,10 +792,11 @@
 
 ## KR
 
-- [Eastern South Korea](/region/6813b7079403bc4170a5d8c1)
-- [Northern South Korea *](/region/6813b7079403bc4170a5d8bb)
-- [Southern South Korea](/region/6813b7079403bc4170a5d8be)
-- [Western South Korea](/region/6813b7079403bc4170a5d8c4)
+- [Chungcheong](/region/6813b7079403bc4170a5d8c4)
+- [Gangwon](/region/6adf5d232e32f1b904a1bc6d)
+- [Gyeongsang](/region/6813b7079403bc4170a5d8c1)
+- [Jeolla and Jeju Island](/region/6813b7079403bc4170a5d8be)
+- [Seoul *](/region/6813b7079403bc4170a5d8bb)
 
 ---
 
@@ -881,10 +890,11 @@
 
 ## LY
 
-- [Northeastern Libya](/region/6813b7099403bc4170a5d97b)
-- [Northwestern Libya *](/region/6813b7099403bc4170a5d975)
-- [Southeastern Libya](/region/6813b7099403bc4170a5d97e)
-- [Southwestern Libya](/region/6813b7099403bc4170a5d978)
+- [Benghazi](/region/6adf5d232e32f1b904a1bc7d)
+- [Fezzan](/region/6813b7099403bc4170a5d978)
+- [Jabal al Akhdar](/region/6813b7099403bc4170a5d97b)
+- [Kufra](/region/6813b7099403bc4170a5d97e)
+- [Tripoli *](/region/6813b7099403bc4170a5d975)
 
 ---
 
@@ -977,6 +987,12 @@
 ## MU
 
 - [Mauritius *](/region/696a81f5882256e1db11822c)
+
+---
+
+## MV
+
+- [Maldives](/region/6adf5d232e32f1b904a1bc7b)
 
 ---
 
@@ -1117,6 +1133,7 @@
 - [Arequipa](/region/6813b7089403bc4170a5d948)
 - [Cuzco](/region/6813b7089403bc4170a5d94b)
 - [Lima *](/region/6813b7089403bc4170a5d945)
+- [Loreto](/region/6adf5d232e32f1b904a1bc85)
 - [Trujillo](/region/6813b7089403bc4170a5d942)
 
 ---
@@ -1273,8 +1290,11 @@
 ## SD
 
 - [Darfur](/region/6813b70a9403bc4170a5da44)
-- [Northern Sudan *](/region/6813b70a9403bc4170a5da41)
-- [Nuba Mountains](/region/6813b70a9403bc4170a5da47)
+- [Khartoum *](/region/6adf5d232e32f1b904a1bc6f)
+- [Kordofan](/region/6813b70a9403bc4170a5da47)
+- [Northern Sudan](/region/6813b70a9403bc4170a5da41)
+- [Port Sudan](/region/6adf5d232e32f1b904a1bc75)
+- [South-Eastern Sudan](/region/6adf5d232e32f1b904a1bc77)
 
 ---
 
@@ -1520,15 +1540,16 @@
 ## US
 
 - [Alaska](/region/6813b7069403bc4170a5d7ec)
-- [American Atlantic Coast *](/region/6813b7069403bc4170a5d804)
 - [American Great Lakes](/region/6813b7069403bc4170a5d7ef)
-- [American Pacific Coast](/region/6813b7069403bc4170a5d7f8)
 - [Hawaii](/region/6813b7069403bc4170a5d7e9)
-- [Northern USA](/region/6813b7069403bc4170a5d7f2)
+- [Midwest](/region/6813b7069403bc4170a5d7f2)
+- [New England](/region/6813b7069403bc4170a5d804)
 - [Northwestern USA](/region/6813b7069403bc4170a5d7f5)
 - [Southeastern USA](/region/6813b7069403bc4170a5d801)
 - [Southern USA](/region/6813b7069403bc4170a5d7fe)
 - [Southwestern USA](/region/6813b7069403bc4170a5d7fb)
+- [US Pacific Islands](/region/6adf5d232e32f1b904a1bc7f)
+- [Virginia *](/region/6813b7069403bc4170a5d7f8)
 
 ---
 
