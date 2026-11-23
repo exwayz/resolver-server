@@ -992,7 +992,7 @@
 
 ## MV
 
-- [Maldives](/region/6adf5d232e32f1b904a1bc7b)
+- [Maldives *](/region/6adf5d232e32f1b904a1bc7b)
 
 ---
 
